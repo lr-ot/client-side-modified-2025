@@ -1,0 +1,153 @@
+/* Show it's not fixed to the top */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.carousel-inner {
+  height: 55vh;
+}
+
+#top-nav {
+  z-index: 1010;
+  background-color: white;
+  height: 66px;
+  position: sticky; 
+  top: 0;
+  font-size: smaller;
+  font-weight: 100;
+  margin-top: -24px;
+}
+
+
+.gallery {
+  z-index: 1020;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+} 
+
+.card-img-top:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer; 
+
+}
+
+.card-img-thumbnail {
+  width: 100px;
+  margin-bottom: 5px;
+  opacity: 0.6;
+  transition: 0.3s;
+  
+}
+
+.card-img-thumbnail:hover{
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s, transform 0.1s;
+  transform: scale(1.1);
+}
+
+.card-img-large {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.navbar-brand {
+  transition: 0.3s;
+}
+
+.navbar-brand:hover{
+  transform:scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nav-link {
+  padding: 23px 22px;
+  background-color: white;
+}
+
+.nav-link:hover{
+  background-color: rgb(164, 160, 209);
+  cursor: pointer;
+}
+
+.nav-link.active {
+  height: max-content;
+  background-color: rgb(127, 121, 209);
+}
+
+.fancybox__container{
+  z-index: 1060;
+}
+
+.mt-20 { 
+  margin-top: 20px; 
+}
+
+.form-control { 
+  margin-top: 10px; 
+}
+
+.banner-region {
+  background-color: blue;
+  color: #fff; /* #ffffff, white */
+  padding: 0px;
+}
+
+.banner-region2 {
+  background-color: purple;
+  color: #fff; /* #ffffff, white */
+}
+
+.content {
+  display: none; 
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.btn {
+  background-color: rgb(127, 121, 209);
+  border-color: transparent;
+  transition: 0.1s;
+}
+
+.btn:hover{
+  filter: invert(100%);
+  transition: 0.1s;
+}
+
+.fb-300 {
+  float:left;
+  width:300px;
+  border: 1px solid black;
+  height:200px;
+  margin-left:20px;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
